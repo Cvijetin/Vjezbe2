@@ -15,7 +15,7 @@ export default function App() {
     // View, text Component
     <View style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Test app</Text>
+        <Text style={styles.title}>React Native App</Text>
       </View>
 
       {/* Flexbox layout */}
@@ -35,8 +35,6 @@ export default function App() {
           uri: "https://reactnative.dev/img/tiny_logo.png",
         }}
       />
-      <Image style={styles.tinyLogo} source={require("./assets/favicon.png")} />
-
       {/* button component */}
       <Button title="Button" onPress={() => Alert.alert("Button pressed")} />
 
@@ -55,15 +53,15 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 50,
-    backgroundColor: "#4eb168",
+    backgroundColor: "#fff",
   },
   header: {
     borderBottomWidth: 2,
-    padding: 10,
+    padding: 50,
   },
   title: {
     textAlign: "center",
-    fontSize: 30,
+    fontSize: 35,
   },
   jumbotron: {
     flexDirection: "row",
@@ -71,6 +69,7 @@ const styles = StyleSheet.create({
   },
   tinyLogo: {
     margin: 10,
+    marginLeft: 120,
     width: 100,
     height: 100,
   },
